@@ -38,5 +38,10 @@ def generate_launch_description():
                 parameters=[{'robot_id': i}]
             )
         )
-
+        nodes.append(
+            Node(
+                package='multi_robot_project',
+                executable='cnn_controller',
+                output='screen'
+        )
     return LaunchDescription(nodes)
