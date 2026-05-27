@@ -22,4 +22,10 @@ setup(
             'connectivity_monitor = scripts.connectivity_monitor:main',
         ],
     },
+    entry_points={
+    'console_scripts': [
+        'cnn_controller = scripts.cnn_controller:main',
+        'dataset_recorder = scripts.dataset_recorder:main',
+        ],
+    },
 )
