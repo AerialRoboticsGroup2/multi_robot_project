@@ -25,6 +25,8 @@ class CNNController(nn.Module):
 
         self.fc1 = nn.Linear(32 * 24, 128)
         self.fc2 = nn.Linear(128, 64)
+        # linear velocity = float(output[0][0])
+        # angular velocity = float(output[0][1])
         self.fc3 = nn.Linear(64, 2)
 
     def forward(self, x):
