@@ -70,15 +70,17 @@ class CNNControllerNode(Node):
             10
         )
 
+    # data from LiDAR
     def scan_callback(self, msg):
-
+    
         ranges = np.array(msg.ranges)
 
         ranges[np.isinf(ranges)] = 10.0
         ranges[np.isnan(ranges)] = 10.0
 
         data = ranges[:32]
-
+        
+        # 32 laser distance values
         data = data.reshape((1,1,32))
 
         tensor = torch.tensor(data, dtype=torch.float32)
