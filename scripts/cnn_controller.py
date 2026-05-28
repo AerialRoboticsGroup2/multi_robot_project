@@ -10,7 +10,7 @@ import torch
 import torch.nn as nn
 
 # ======================================
-# CNN MODEL
+# CNNs: learning obstacle avoidance, reactive navigation, motion policy
 # ======================================
 
 class CNNController(nn.Module):
