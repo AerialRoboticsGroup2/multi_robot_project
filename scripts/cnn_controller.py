@@ -9,9 +9,9 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-# ======================================
+# #####################################################################
 # CNNs: learning obstacle avoidance, reactive navigation, motion policy
-# ======================================
+# #####################################################################
 
 class CNNController(nn.Module):
 
