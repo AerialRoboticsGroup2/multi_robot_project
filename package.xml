@@ -1,13 +1,32 @@
-multi_robot_project
+<?xml version="1.0"?>
+<package format="3">
 
-0.0.1
+  <name>multi_robot_project</name>
+  <version>0.0.1</version>
 
-MIT
+  <description>
+    Multi-Robot Cooperative Control Project using ROS2
+  </description>
 
-<buildtool_depend>ament_python</buildtool_depend>
+  <maintainer email="student@email.com">
+    student
+  </maintainer>
 
-rclpy
-std_msgs
-geometry_msgs
-sensor_msgs
-nav_msgs
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+
+</package>
